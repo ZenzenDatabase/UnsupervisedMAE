@@ -26,7 +26,7 @@ The model consists of:
 - data_loader.py # Dataset loading and preprocessing
 - model_DCCA_MAE.py
 - liner_cca.py
-- train_DCCA_MAE.py
+- main_DCCA_MAE.py
 - README.md
 
 ---
@@ -63,7 +63,7 @@ https://drive.google.com/file/d/1oEZlTbCnDdhzd2x7lNbEhcK1yqb3B83G/view?usp=shari
 Training and Evaluation:
 
 ```bash
-python train_DCCA_MAE.py
+python main_DCCA_MAE.py
 ```
 Training includes:
 
