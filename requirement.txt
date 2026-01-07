@@ -1,0 +1,5 @@
+python >=3.10
+h5py
+torch
+scikit-learn
+numpy
