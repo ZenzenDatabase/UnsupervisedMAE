@@ -22,7 +22,7 @@ The model consists of:
 
 ## Repository Structure
 
-
+‘’‘
 ├── config/ # Training and evaluation configuration files
 ├── data_loader/ # Dataset loading and preprocessing
 ├── models/ # Encoders, MAE decoder, CCA modules
@@ -32,7 +32,7 @@ The model consists of:
 ├── train.py # Training script
 ├── eval.py # Evaluation script
 └── README.md
-
+‘’‘
 
 ---
 
