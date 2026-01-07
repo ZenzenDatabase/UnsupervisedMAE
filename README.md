@@ -49,6 +49,13 @@ pip install -r requirements.txt
 Data Preparation
 
 HSC-MAE operates on pre-extracted audio and visual feature vectors rather than raw waveforms or images.
+
+VEGAS Dataset as an example can be downloaded from:
+
+```bash
+https://drive.google.com/file/d/1oEZlTbCnDdhzd2x7lNbEhcK1yqb3B83G/view?usp=sharing
+```
+
 ```bash
 /home/user/hsc_mae/data/vegas/VEGAS.h5
 ```
