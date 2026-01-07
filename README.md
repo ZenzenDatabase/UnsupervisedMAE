@@ -26,7 +26,7 @@ The model consists of:
 - data_loader.py # Dataset loading and preprocessing
 - model_DCCA_MAE.py
 - liner_cca.py
-- model_DCCA_MAE.py
+- train_DCCA_MAE.py
 - README.md
 
 ---
@@ -49,25 +49,14 @@ pip install -r requirements.txt
 Data Preparation
 
 HSC-MAE operates on pre-extracted audio and visual feature vectors rather than raw waveforms or images.
-
-Example structure:
-
-data/
-├── AVE/
-│   ├── audio_features.npy
-│   └── visual_features.npy
-└── VEGAS/
-    ├── audio_features.npy
-    └── visual_features.npy
-
-
-Dataset loading can be adapted via data_loader/.
-
-Training
-
-Run training with:
 ```bash
-python train.py --config config/hsc_mae.yaml
+/home/user/hsc_mae/data/vegas/VEGAS.h5
+```
+
+Training and Evaluation:
+
+```bash
+python train_DCCA_MAE.py
 ```
 Training includes:
 
@@ -79,17 +68,15 @@ learnable multi-task loss weighting,
 
 optional teacher–student distillation.
 
-Evaluation
 
-Evaluate cross-modal retrieval:
-```bash
-python eval.py --config config/hsc_mae.yaml --checkpoint path/to/checkpoint.pth
-```
 Metrics:
 
 - Audio → Visual mAP
 
 - Visual → Audio mAP
+
+- Average
+- 
 
 A linear CCA projection may be applied at test time to sharpen retrieval geometry.
 
