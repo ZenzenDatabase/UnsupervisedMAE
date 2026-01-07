@@ -20,19 +20,14 @@ The model consists of:
 
 ---
 
-## Repository Structure
+## Repository Structure for VEGAS dataset
 
-‘’‘
-├── config/ # Training and evaluation configuration files
-├── data_loader/ # Dataset loading and preprocessing
-├── models/ # Encoders, MAE decoder, CCA modules
-├── losses/ # Reconstruction, soft InfoNCE, DCCA, distillation
-├── metrics/ # Retrieval metrics (mAP)
-├── utils/ # EMA, masking, logging utilities
-├── train.py # Training script
-├── eval.py # Evaluation script
-└── README.md
-‘’‘
+- data/vegas/ # Training and evaluation configuration files
+- data_loader.py # Dataset loading and preprocessing
+- model_DCCA_MAE.py
+- liner_cca.py
+- model_DCCA_MAE.py
+- README.md
 
 ---
 
